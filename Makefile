@@ -1,5 +1,5 @@
 WOKWI_PROJECT_ID=341154161238213203
-# A 3-bit ripple carry adder
+# A 4-bit ripple carry adder
 fetch:
 	curl https://wokwi.com/api/projects/$(WOKWI_PROJECT_ID)/verilog > src/user_module_$(WOKWI_PROJECT_ID).v
 	sed -e 's/USER_MODULE_ID/$(WOKWI_PROJECT_ID)/g' template/scan_wrapper.v > src/scan_wrapper_$(WOKWI_PROJECT_ID).v
